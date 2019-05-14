@@ -4368,7 +4368,12 @@ article{
 	list-style: none;
 }
 .trevor-posts-container{
-	/* display:inline-block; */
+	text-align: center;
+}
+.trevor-posts{
+	width: 80%;
+    margin: 0 auto;
+    text-align: left;
 }
 .theImage{
 	height: 200px;
@@ -4390,4 +4395,18 @@ article{
 	display: inline-block;
 	width:45%;
 	vertical-align: top;
+}
+.trevor-posts .wrap{
+	padding:0;
+}
+body.page-two-column:not(.archive) #primary .entry-content{
+	width:auto;
+	float: none;
+}
+.panel-content{
+	padding:4%;
+}
+.announcement-image img{
+	width:200px;
+
 }

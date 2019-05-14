@@ -73,12 +73,13 @@ get_header(); ?>
 					if ($query->have_posts() ) :
 						while ( $query->have_posts() ) :
 							$query->the_post();
-							get_template_part( 'template-parts/page/content', 'front-page' );
+							get_template_part( 'template-parts/page/content', 'front-page-trevor' );
 						endwhile;
 					else :
 						get_template_part( 'template-parts/post/content', 'none' );
 					endif;
 					?>
+					
 				</div>
 			</div>
 		</div>
