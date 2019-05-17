@@ -4340,7 +4340,7 @@ article{
 */
 .site-header{
 	background-image: url("http://localhost/wordpress/wp-content/themes/twentyseventeen/assets/images/hero-image.jpg");
-	height: 500px;
+	height: 1000px;
 	background-repeat: no-repeat;
 	margin:auto;
 	background-size: cover;
@@ -4350,10 +4350,6 @@ article{
 	top: 32px;
     background: none;
     border: none;
-}
-.theImage{
-	border-style: none;
-	margin-left: 350px;
 }
 .trevor-menus{
 	width:45%;
@@ -4375,11 +4371,6 @@ article{
     margin: 0 auto;
     text-align: left;
 }
-.theImage{
-	height: 200px;
-	width: 400px;
-	background-image: url("assets\images\Capture.PNG")
-}
 .banner-nav{
 	display:inline-block;
 	width:40%;
@@ -4397,7 +4388,7 @@ article{
 	vertical-align: top;
 }
 .trevor-posts .wrap{
-	padding:0;
+	padding:10px;
 }
 body.page-two-column:not(.archive) #primary .entry-content{
 	width:auto;
@@ -4409,4 +4400,29 @@ body.page-two-column:not(.archive) #primary .entry-content{
 .announcement-image img{
 	width:200px;
 
+}
+.wp-block-image figure.alignleft{
+	margin:0;
+}
+.trevor-posts .wp-block-image figure.alignleft{
+	margin:0;
+}
+.trevor-posts .wp-block-image .alignleft>figcaption{
+	height:0;
+	margin:0;
+}
+.trevor-posts p{
+	margin:0;
+}
+.menuImage .theImg {
+    width: 100%;
+}
+.menuImage{
+	padding: 5%;
+}
+.announcmentsLabel{
+    color: purple;
+    margin: 0;
+    margin-left: 9%;
+    font-weight: bold;
 }

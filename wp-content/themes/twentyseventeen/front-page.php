@@ -56,9 +56,10 @@ get_header(); ?>
 				 wp_nav_menu( array('theme_location' => 'resourcesAndDatabases'));?>
 			</div>
 		</div>
-		<div class="theImage" id="theImage">
-			<!-- <img src="wp-content\themes\twentyseventeen\assets\images\Capture.PNG" /> -->
+		<div class="menuImage" id="menuImage">
+			<img class="theImg" src="wp-content\themes\twentyseventeen\assets\images\Capture.PNG" />
 		</div>
+		<h1 class="announcmentsLabel">Announcments</h1>
 		<div class="trevor-posts-container">
 			<div class="trevor-posts" >
 			<div id="primary" class="content-area">
