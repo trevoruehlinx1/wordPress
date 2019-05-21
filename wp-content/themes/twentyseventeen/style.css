@@ -4384,7 +4384,7 @@ article{
 }
 .trevor-posts article{
 	display: inline-block;
-	width:50%;
+	width:49%;
 	vertical-align: top;
 }
 .trevor-posts .wrap{
@@ -4444,4 +4444,29 @@ body.page-two-column:not(.archive) #primary .entry-content{
 	width: 55%;
 	float: right;
 	padding-left: 3%;
+}
+.trevor-posts .entry-title::after{
+	content:"";
+	border-style: solid;
+	display:block;
+	width: 50px;
+	color:orange;
+	margin-top:10px;
+}
+.search-form{
+	width:40%;
+}
+.search-form .search-field{
+	background: none;
+    border-style: solid;
+	border-color: white;
+	border-radius: 25px;
+}
+.search-form button{
+	background: none;
+}
+@media only screen and (max-width:600px){
+	.site-header{
+		display:none;
+	}
 }
