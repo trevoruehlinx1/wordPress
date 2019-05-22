@@ -4340,10 +4340,11 @@ article{
 */
 .site-header{
 	background-image: url("http://localhost/wordpress/wp-content/themes/twentyseventeen/assets/images/hero-image.jpg");
-	height: 1000px;
+	height: 730px;
 	background-repeat: no-repeat;
 	margin:auto;
 	background-size: cover;
+	background-position-y: -292px;
 
 }
 .navigation-top{
@@ -4453,9 +4454,6 @@ body.page-two-column:not(.archive) #primary .entry-content{
 	color:orange;
 	margin-top:10px;
 }
-.search-form{
-	width:40%;
-}
 .search-form .search-field{
 	background: none;
     border-style: solid;
@@ -4465,8 +4463,22 @@ body.page-two-column:not(.archive) #primary .entry-content{
 .search-form button{
 	background: none;
 }
-@media only screen and (max-width:600px){
-	.site-header{
-		display:none;
-	}
+.widget-column.footer-widget-1{
+	width: 18%;
+    margin-left: 5%;
+}
+.site-navigation-fixed.navigation-top{
+	position: static;
+	width: 60%;
+}
+.custom-logo{
+	padding:5px;
+	margin-right: 440px;
+}
+.global-header{
+	height: 80px;
+}
+.navigation-top .current-menu-item > a, .navigation-top a{
+	color:white;
+	border-right-style:solid;
 }
