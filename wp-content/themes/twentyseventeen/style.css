@@ -4478,7 +4478,20 @@ body.page-two-column:not(.archive) #primary .entry-content{
 .global-header{
 	height: 80px;
 }
-.navigation-top .current-menu-item > a, .navigation-top a{
+
+.site-navigation-fixed .menu:first-child a{
 	color:white;
 	border-right-style:solid;
+}
+.site-navigation-fixed .menu:first-child li:last-child a{
+	border-style: none;
+}
+.banner-nav{
+	margin-top: 60px;
+}
+.site-navigation-fixed{
+	margin-left: 86px;
+}
+.norm_row .sfsi_wDiv{
+	right: -115px;
 }
