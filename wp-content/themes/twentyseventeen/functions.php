@@ -149,6 +149,10 @@ function twentyseventeen_setup() {
 				'text_about',
 				'search',
 			),
+			'sidebar-4' => array(
+				'text_about',
+				'widgets',
+			)
 		),
 
 		// Specify the core-defined pages to create and add custom thumbnails to some of them.
@@ -363,6 +367,17 @@ function twentyseventeen_widgets_init() {
 			'name'          => __( 'Footer 2', 'twentyseventeen' ),
 			'id'            => 'sidebar-3',
 			'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => __( 'Social Media Widgets', 'twentyseventeen' ),
+			'id'            => 'sidebar-4',
+			'description'   => __( 'Add social media widgets to appear in the header.', 'twentyseventeen' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

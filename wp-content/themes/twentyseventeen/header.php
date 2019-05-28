@@ -28,6 +28,13 @@
 		<div class="global-header" >
 			<?php the_custom_logo(); ?>
 			Strength in Numbers. Fairness in Justice
+			<?php
+		if ( is_active_sidebar( 'sidebar-4' ) ) {
+			dynamic_sidebar( 'sidebar-4' ); ?>
+			</div>
+			<?php
+		}
+		?>
 		</div>
 		<header id="masthead" class="site-header" role="banner">
 		<?php
