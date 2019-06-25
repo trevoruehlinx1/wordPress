@@ -58,13 +58,10 @@ function twentyseventeen_setup() {
 	// Set the default content width.
 	$GLOBALS['content_width'] = 525;
 
-	// This theme uses wp_nav_menu() in five locations.
+	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus(
 		array(
 			'top'    => __( 'Top Menu', 'twentyseventeen' ),
-			'aboutOCDLA' => __('About OCDLA', 'twentyseventeen' ),
-			'members' => __('Members', 'twentyseventeen'),
-			'resourcesAndDatabases' => __('Resources and Databases', 'twentyseventeen'),
 			'social' => __( 'Social Links Menu', 'twentyseventeen' ),
 		)
 	);
@@ -149,10 +146,6 @@ function twentyseventeen_setup() {
 				'text_about',
 				'search',
 			),
-			'sidebar-4' => array(
-				'text_about',
-				'widgets',
-			)
 		),
 
 		// Specify the core-defined pages to create and add custom thumbnails to some of them.
@@ -367,17 +360,6 @@ function twentyseventeen_widgets_init() {
 			'name'          => __( 'Footer 2', 'twentyseventeen' ),
 			'id'            => 'sidebar-3',
 			'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
-	register_sidebar(
-		array(
-			'name'          => __( 'Social Media Widgets', 'twentyseventeen' ),
-			'id'            => 'sidebar-4',
-			'description'   => __( 'Add social media widgets to appear in the header.', 'twentyseventeen' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

@@ -17,6 +17,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
@@ -27,7 +28,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyseventeen' ); ?></a>
 		<div class="global-header" >
 			<?php the_custom_logo(); ?>
-			Strength in Numbers. Fairness in Justice
+			<strong>Strength in Numbers. Fairness in Justice</strong>
 			<?php
 		if ( is_active_sidebar( 'sidebar-4' ) ) {
 			dynamic_sidebar( 'sidebar-4' ); ?>

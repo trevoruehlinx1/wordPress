@@ -39,20 +39,23 @@ get_header(); ?>
 	endif; // The if ( 0 !== twentyseventeen_panel_count() ) ends here.
 		?>
 		<div class="homePageMenus">
-			<div class="trevor-menus">
-				
+			<div class="homepage-menu-column">
+			<div class="trevor-menu trevor-about-menus">
+				<div class="trevor-menu-label trevor-about-menu-label">ABOUT OCDLA</div>
 				<?php
-					echo '<div class="trevor-menu-label">About OCDLA</div>';
 					wp_nav_menu( array('theme_location' => 'aboutOCDLA'));
 				?>
+			</div>
+			<div class="trevor-menu trevor-member-menus">
+				<div class="trevor-menu-label trevor-members-menu-label">MEMBERS</div>
 				<?php
-					echo '<div class="trevor-menu-label">About OCDLA</div>';
-					wp_nav_menu( array('theme_location' => 'moreAboutOCDLA'));
+					wp_nav_menu( array('theme_location' => 'members'));
 				?>
 			</div>
-			<div class="trevor-menus">
+			</div>
+			<div class="trevor-menu trevor-resources-menus">
+				<div class="trevor-menu-label trevor-resources-menu-label">RESOURCES & DATABASES</div>
 				<?php
-				 echo '<div class="trevor-menu-label">About OCDLA</div>';
 				 wp_nav_menu( array('theme_location' => 'resourcesAndDatabases'));?>
 			</div>
 		</div>
