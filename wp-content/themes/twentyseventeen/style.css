@@ -4331,16 +4331,11 @@ p > object:only-child {
 	}
 }
 /*Style Overrides*/
-/*
-article{
-    display: inline-block;
-    width: 150px;
-    padding: 15px;
-    vertical-align: top;
+body{
+	font-family: 'Open Sans', sans-serif;
 }
-*/
 .site-header{
-	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(http://localhost/wordpress/wp-content/themes/twentyseventeen/assets/images/hero-image.jpg);
+	background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(/wp-content/themes/twentyseventeen/assets/images/hero-image.jpg);
 	height: 730px;
 	background-repeat: no-repeat;
 	margin:auto;
@@ -4593,4 +4588,35 @@ body.page-two-column:not(.archive) #primary .entry-content{
 }
 .site-info a{
 	font-family: 'Open Sans', sans-serif;
+}
+.main-navigation{
+	width:900px;
+}
+/*Navigation Sidebars*/
+.single-post-page-wrap, .page-wrap{
+	margin:0;
+	max-width: 100%;
+	padding:0;
+}
+.nav-menu-sidebar{
+	width:17%;
+	float: left;
+	background-color: darkturquoise;
+}
+.nav-menu-sidebar{
+	display: none;
+    float: none;
+    vertical-align: top;
+}
+#primary{
+	float: none !important;
+}
+@media screen and (min-width:1200px){
+	.nav-menu-sidebar, .single-post{
+		display: inline-block;
+	}
+}
+.basic-page{
+	width: 64%;
+    display: inline-block;
 }

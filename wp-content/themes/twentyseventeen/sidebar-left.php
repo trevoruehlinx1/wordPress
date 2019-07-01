@@ -9,12 +9,11 @@
  * @since 1.0
  * @version 1.0
  */
-
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-5' ) ) {
 	return;
 }
 ?>
 
-<aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Right Sidebar', 'twentyseventeen' ); ?>">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<aside id="sidebar-left" class="nav-menu-sidebar widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Left Sidebar', 'twentyseventeen' ); ?>">
+	<?php dynamic_sidebar( 'sidebar-5' ); ?>
 </aside><!-- #secondary -->

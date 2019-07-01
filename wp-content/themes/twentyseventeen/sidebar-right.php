@@ -15,6 +15,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Right Sidebar', 'twentyseventeen' ); ?>">
+<aside id="sidebar-right" class="nav-menu-sidebar widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Right Sidebar', 'twentyseventeen' ); ?>">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->

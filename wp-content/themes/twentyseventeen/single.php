@@ -12,8 +12,9 @@
 
 get_header(); ?>
 
-<div class="wrap">
-	<div id="primary" class="content-area">
+<div class="single-post-page-wrap wrap">
+<?php get_sidebar('left'); ?>
+	<div id="primary" class="single-post content-area">
 		<main id="main" class="site-main" role="main">
 
 			<?php
@@ -40,7 +41,8 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
+
+	<?php get_sidebar('right'); ?>
 </div><!-- .wrap -->
 
 <?php

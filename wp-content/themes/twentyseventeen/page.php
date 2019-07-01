@@ -17,8 +17,9 @@
 
 get_header(); ?>
 
-<div class="wrap">
-	<div id="primary" class="content-area">
+<div class="page-wrap wrap">
+<?php get_sidebar('left'); ?>
+	<div id="primary" class="basic-page content-area">
 		<main id="main" class="site-main" role="main">
 			<?php
 			while ( have_posts() ) :
@@ -36,6 +37,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<?php get_sidebar('right'); ?>
 </div><!-- .wrap -->
 
 <?php

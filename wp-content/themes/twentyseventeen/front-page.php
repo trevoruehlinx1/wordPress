@@ -60,9 +60,9 @@ get_header(); ?>
 			</div>
 		</div>
 		<div class="menuImage" id="menuImage">
-			<img class="theImg" src="wp-content\themes\twentyseventeen\assets\images\Capture.PNG" />
+			<img class="theImg" src="/wp-content/themes/twentyseventeen/assets/images/Capture.PNG" />
 		</div>
-		<h1 class="announcments-label">Announcments</h1>
+		<h1 class="announcments-label">Announcements</h1>
 		<div class="trevor-posts-container">
 			<div class="trevor-posts" >
 				<div id="primary" class="content-area">
